@@ -20,13 +20,15 @@ import SignUp from "./backend/signup";
 import ZellePage from "./pages/zelle";
 import BillPay from "./pages/billpay";
 import TransferOptions from "./pages/transfer";
+import VerifyPage from "./Home/verify";
 
 const App: React.FC = () => {
   return (
     <Router>
       <div className="font-sans">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<VerifyPage />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/signup" element={<SignUp />} />
